@@ -1,0 +1,604 @@
+/* --- UNIVERSAL CONFIGURATIONS & SMOOTHING --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Glides beautifully when navigation buttons are clicked */
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- UPPER CONTACT STRIP --- */
+.top-bar {
+    background-color: #fcf8f4;
+    border-bottom: 1px solid #f3e9df;
+    padding: 12px 0;
+}
+
+.top-bar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.top-info-item {
+    font-size: 14px;
+    color: #666666;
+}
+
+.top-info-item span {
+    color: #b5b5b5;
+}
+
+.top-info-item strong {
+    color: #222222;
+    font-weight: 600;
+}
+
+/* --- NAVIGATION HEADER PANEL --- */
+.main-header {
+    background-color: #ffffff;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.logo-fallback {
+    font-family: 'Fredoka One', cursive;
+    font-size: 32px;
+    color: #ff6f61;
+}
+
+.logo-fallback .dot {
+    color: #ffb703;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: #ff6f61;
+}
+
+/* --- UNIVERSAL SECTION HEADER AREAS --- */
+.section-title-area {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title-area h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 38px;
+    color: #1a2b49;
+}
+
+.section-title-area h2 span {
+    color: #ff6f61;
+}
+
+.section-title-area p {
+    color: #666666;
+    margin-top: 10px;
+}
+
+/* --- HERO SECTION STYLES --- */
+.hero-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text-content {
+    flex: 1;
+    max-width: 540px;
+    z-index: 2;
+}
+
+.welcome-badge {
+    color: #ff6f61;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-text-content h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 56px;
+    color: #1a2b49;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero-text-content h1 span {
+    color: #ffb703;
+}
+
+.hero-text-content p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* --- BUTTON ACCENTS --- */
+.btn-shelly {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ff6f61;
+    color: #ffffff;
+    padding: 16px 40px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 10px 25px rgba(255, 111, 97, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-shelly:hover {
+    background-color: #e55a4c;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(255, 111, 97, 0.4);
+}
+
+.hero-visual-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    max-width: 520px;
+}
+
+.main-banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- VALUES & FEATURES CARD GRID --- */
+.features-section {
+    padding: 60px 0 100px 0;
+    background-color: #ffffff;
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature-box {
+    flex: 1;
+    padding: 40px 30px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.orange-box { background-color: #fdf5f3; }
+.blue-box { background-color: #f3f7fd; }
+.yellow-box { background-color: #fdfaf3; }
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.feature-box h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 22px;
+    color: #1a2b49;
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.feature-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ff6f61;
+}
+
+/* --- ABOUT SECTION STYLES --- */
+.about-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.about-visuals {
+    flex: 1;
+    position: relative;
+    max-width: 500px;
+}
+
+.about-image-bg-shape {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background-color: #ff6f61;
+    border-radius: 30px 200px 30px 30px;
+    z-index: 1;
+}
+
+.about-main-img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px 200px 30px 30px;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.about-text-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.section-subtitle {
+    color: #ffb703;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.about-text-content h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 48px;
+    color: #1a2b49;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.about-text-content h2 span {
+    color: #ff6f61;
+}
+
+.about-text-content p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.about-stats-row {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-family: 'Fredoka One', cursive;
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.color-orange { color: #ff6f61; }
+.color-blue { color: #4a90e2; }
+
+.stat-label {
+    font-size: 15px;
+    color: #222222;
+    font-weight: 700;
+}
+
+/* --- FUNCTIONAL SECTION STRUCTURES (CLASSES, TEACHERS, BLOG) --- */
+.classes-section, .teachers-section, .blog-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f3e9df;
+}
+
+.classes-container, .teachers-container, .blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Classes Layout elements */
+.class-card {
+    background: #fcf8f4;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 350px;
+    border: 1px solid #f3e9df;
+}
+
+.class-image {
+    height: 200px;
+}
+
+.placeholder-orange { background-color: #ff6f61; }
+.placeholder-blue { background-color: #4a90e2; }
+
+.class-info {
+    padding: 25px;
+}
+
+.class-info h3 {
+    font-family: 'Fredoka One', cursive;
+    color: #1a2b49;
+    margin-bottom: 10px;
+}
+
+/* Teachers Profile structures */
+.teacher-profile {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 250px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+    border: 1px solid #f3e9df;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+
+.teacher-profile h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    color: #1a2b49;
+}
+
+.teacher-profile span {
+    color: #888888;
+    font-size: 14px;
+}
+
+/* Blog panel layout formatting */
+.blog-post {
+    background: #fdfaf3;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 500px;
+    border-left: 5px solid #ffb703;
+}
+
+.blog-date {
+    color: #ff6f61;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.blog-post h3 {
+    font-family: 'Fredoka One', cursive;
+    color: #1a2b49;
+    margin: 10px 0;
+}
+
+/* --- FOOTER GRID BAR --- */
+.main-footer {
+    background-color: #fcf8f4;
+    padding: 80px 0 0 0;
+    border-top: 1px solid #f3e9df;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.brand-col p {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+.footer-column h4 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    color: #1a2b49;
+    margin-bottom: 25px;
+}
+
+.links-col ul {
+    list-style: none;
+}
+
+.links-col ul li {
+    margin-bottom: 12px;
+}
+
+.links-col ul li a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.links-col ul li a:hover {
+    color: #ff6f61;
+}
+
+.contact-col p {
+    font-size: 15px;
+    color: #666666;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.contact-col p strong {
+    color: #1a2b49;
+}
+
+.footer-bottom {
+    background-color: #ffffff;
+    border-top: 1px solid #f3e9df;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #888888;
+}
+
+/* --- STRICT MOBILE MEDIA RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text-content {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .hero-visual-content {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .hero-text-content h1 {
+        font-size: 42px;
+    }
+
+    .about-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 60px;
+    }
+
+    .about-visuals {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .about-stats-row {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 850px) {
+    .features-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        display: none;
+    }
+    
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-menu {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+}
